@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}LED Controller{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1 class="rounded">LED CONTROLLER</h1>
+  <div class="row">
+      <div class="col-xs-6 center"><div class="button"><a href="#" id="button1">Up</a></div></div>
+      <div class="col-xs-6 center"><div class="button"><a href="#" id="button2">Down</a></div></div>
+  </div>
+  <div id="stateWrapper">State = <span class="value"><span id="state">{{ state }}</span> - <span id="stateDescr">{{ stateDescr }}</span></span></div>
+  <div><input id="brightness" name="brightness" type="range" min="0" max="255" step="1" value="{{ brightness }}" class="slider"></div>
+  <div id="brightnessWrapper">Brightness = <span id="brightnessVal" class="value">{{ brightness }}</span></div>
+  <div id="randomWrapper"><input type="checkbox" id="randomOn" name="randomOn" {{'checked="checked"' if randomOn else ""}} /> Random</div>
+  <div id="tempWrapper">CPU temp = <span class="value"><span id="temp" class="value">{{ temp }}</span>&deg;C</span></div>
+</div>
+{% endblock %}

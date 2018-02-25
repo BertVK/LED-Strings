@@ -1,0 +1,89 @@
+body {
+    margin:0;
+    padding:0;
+}
+h1 {
+    text-align:center;
+    background-color: red;
+    color:white;
+    font-size: 2em;
+    font-weight: bold;
+    border: 2px solid #b20101;
+}
+.rounded {
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+.container {
+    max-width:600px;
+}
+.center {
+    text-align: center;
+}
+.button {
+    margin: 0 auto;
+    width: 91px;
+    height: 30px;
+    background-image: url(/static/buttons.jpg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position-x: 0;
+    background-position-y: -4px;
+    padding: 2px 0 0 0;
+    font-size: 1.2em;
+}
+.button a {
+    color : white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.value {
+    font-weight: bold;
+}
+#stateWrapper {
+    margin-top:0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+}
+#brightnessWrapper {
+    margin-top: 0.1em;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: red;
+    cursor: pointer;
+    border: solid 2px #b20101;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: red;
+    cursor: pointer;
+    border: solid 2px #b20101;
+}
